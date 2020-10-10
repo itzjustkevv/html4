@@ -16,7 +16,7 @@
   background-color: navy;
   padding: 30px;
   text-align: center;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"sans-serif;
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'
   font-weight: 700;
   font-style: normal;
   font-size: 45px;
@@ -37,7 +37,7 @@
   padding: 10px;
   background-color:darkorange;
   text-align: center;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"sans-serif;
+  font-family: "neue-aachen-pro",sans-serif;
   font-weight: 400;
   font-style: normal;
   color:whitesmoke
@@ -55,13 +55,47 @@
 .right {
   grid-area: right;
 }
+.form{
+  grid-area: form;
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  color: navy;
+  font-family: neue-aachen-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	}
+	input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px; 
+  margin-top: 5px; 
+  margin-bottom: 10px; 
+}
 
+input[type=submit] {
+  background-color: whitesmoke;
+  color: navy;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: neue-aachen-pro,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
 .footer {
   grid-area: footer;
   background-color: navy;
   padding: 10px;
   text-align: center;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"sans-serif;
+  font-family: "neue-aachen-pro",sans-serif;
   font-weight: 400;
   font-style: normal;
   color: whitesmoke
@@ -106,7 +140,7 @@ San Antonio, TX 78245
 	  
   </div>
   <div class="middle">
-	  <a href="https://www.yelp.com/biz/florios-pizzar%C3%A8-helotes-3">
+    <a href="https://www.yelp.com/biz/florios-pizzar%C3%A8-helotes-3">
 	  <img src="images/pizza.jpg" alt="Florio's PizzaRe" width="300" height="400" title=" https://www.yelp.com/biz/florios-pizzar%C3%A8-helotes-3">
 	  </a>
 	  <p><b>Florio's PizzaRe</b></p>
@@ -166,13 +200,27 @@ What are we? We are a one of a kind Snack Shop that provides indoor seating, the
 	  <p><b>Location&nbsp;</b><br>
 		 11761 Blanco Rd, San Antonio, Texas 78126<br><br>
 		 <b>Business Hours</b><br>
-		 Mon Closed <br>Tue 12:00 pm – 09:00 pm <br> Wed 12:00 pm – 09:00 pm <br>Thu 12:00 pm – 09:00 pm <br>Fri 12:00 pm – 09:00 pm <br> Sat 12:00 pm – 09:00 pm <br> Sun 02:00 pm – 08:00 pm<br><br><br>
+		 Mon Closed <br>Tue 12:00 pm – 09:00 pm <br> Wed 12:00 pm – 09:00 pm <br>Thu 12:00 pm – 09:00 pm <br>Fri 12:00 pm – 09:00 pm <br> Sat 12:00 pm – 09:00 pm <br> Sun 02:00 pm – 08:00 pm
 	  </p>
-	  
+	   <h3>Video</h3>
+	  <!-- youtube video link -->
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/K11GHesbae8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  <div class="footer">
+	 <div class="form"> </div>
+</div>
+<h2>Have any food suggestions? Drop them down below!<br>
+</h2>
+<form action="action_page.php">
+  <label for="name"><strong>First Name</strong></label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name">
+  <label for="email"><strong>E-mail Address</strong></label>
+  <input type="text" id="email" name="E-Mail Address" placeholder="xxxx@gmail.com">
+  <label for="food"><strong>Food&nbsp; Suggestion</strong></label>
+  <input type="submit" value="Submit">
+</form>
+<textarea id="food" name="food" placeholder="Leave your food suggestions here!" style="height:200px"></textarea>
+<div class="footer">
   <p>Created By Kevin Serrata</p>
-  </div>
 </div>
 </body>
 </html>
